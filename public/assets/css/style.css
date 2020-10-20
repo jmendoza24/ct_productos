@@ -1,0 +1,112 @@
+
+    .verde{
+      background-color: #67a900;
+      color: white;
+    }
+    .azul{
+
+       background-color: #023761;
+       color: white;
+    }
+    .gris{  
+        background-color: #666666;
+       color: white;
+    }
+    .gris_tabla{  
+        background-color: whitesmoke;
+       color: white;
+    }
+    .gris_barra{
+      background-color: whitesmoke;
+      color: #023761;
+      font-size: 14px;
+    }
+    .textos{
+      color: #023761;
+      font-size: 14px; 
+    }
+    .rojo{
+       background-color: #ff0010;
+       color: white;
+    }
+    .texto_rojo{
+      color: #ff0010;
+    }
+    .texto_azul{
+      color: #023761;     
+    }
+    .texto_gris{
+      color: #666666;
+    }
+    .texto_verde{
+      color: #67a900;
+    }
+   .btn_verde{
+         background-color: #67a900  !important;
+         color: white;
+
+    }
+    .btn_azul{
+         background-color: #023761  !important;
+         color: white;
+    }
+    .btn_rojo{
+         background-color: #ff0010 ;
+         color: white;
+    }
+    .btn_gris{
+         background-color: #666666;
+         color: white;
+    }
+
+
+    .btn_azul:active{
+    color: white; background-color: #023761  !important;
+    }
+    
+
+    .btn_azul:focus{
+       color: white; background-color: #023761  !important;
+    }
+
+    .btn_azul{
+     color: white; background-color: #023761  !important;
+    } .btn_azul:focus{
+        color: white; background-color: #023761  !important;
+    }
+        
+
+    .btn_verde:hover { color: white; background-color: #67a900}
+    .btn_rojo:hover { color: white; }
+    .btn_gris:hover { color: white; }
+    .btn_azul:hover { color: white; background-color: #023761}
+    .gris:hover { color: white; }
+    .azul:hover { color: white; }
+    .rojo:hover { color: white; }
+    .btn_gris:hover { color: white; }
+    .texto_rojo:hover { color: white; }
+    .nav-link active{
+         color: #852fbe;
+          border-color: #852fbe;
+      }
+        .btn_verde2:hover { color: #67a900;}
+
+    .main-menu.menu-light .navigation > li ul .active > a {
+        color: #A34B0A;
+        font-weight: 500;
+    }
+
+      .danger{color: #ff0010;}
+      .error{color: #ff0010;}
+
+      .main-section{
+      margin:0 auto;
+      padding: 20px;
+      margin-top: 100px;
+      background-color: #fff;
+      box-shadow: 0px 0px 20px #c1c1c1;
+    }
+    .fileinput-remove,
+    .fileinput-upload{
+      display: none;
+    }
