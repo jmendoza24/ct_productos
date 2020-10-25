@@ -82,7 +82,7 @@ Route::get('cots', 'tbl_cotizacionesController@index')->name('cots');
 
 Route::get('ver_oc', 'tbl_cotizacionesController@ver_oc');
 Route::get('categorias', 'CatalogosController@categorias')->name('categorias.index');
-
+Route::get('vendedores', 'vendedorController@index')->name('vendedor.index');
 });
 
 
