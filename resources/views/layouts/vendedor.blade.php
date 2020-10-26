@@ -11,16 +11,16 @@
   <title>Dialdesa</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i"
   rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/vendors.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/app.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/core/menu/menu-types/vertical-menu.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/pages/users.cs')}}s">
+  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/vendors.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url('app-assets/css/app.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url('assets/css/style.css')}}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
-<body class="vertical-layout vertical-menu 2-columns fixed-navbar"
-data-open="click" data-menu="vertical-menu" data-col="2-columns">
+<body class="horizontal-layout horizontal-menu 2-columns   menu-expanded" data-open="click"
+data-menu="horizontal-menu" data-col="2-columns">
   <!-- fixed-top-->
-  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-border">
+  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-light navbar-border">
     <div class="navbar-wrapper">
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
@@ -56,31 +56,10 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
       </div>
     </div>
   </nav>
- 
   <div class="app-content content">
     <div class="content-wrapper">
       <div class="content-body">
-        <div class="row" style="background: white;">
-          <div class="col-md-6">
-            <div class="row-form">
-              <label class="mr-1">Cadena:</label>
-              <select class="form-control">
-                <option value="">Seleccione...</option>
-                <option value="1">Cadena 1</option>
-                <option value="1">Cadena 2</option>
-                <option value="1">Cadena 3</option>
-                <option value="1">Cadena 4</option>
-                <option value="1">Cadena 5</option>
-              </select>
-              <span class="btn btn-primary">Buscar</span>
-            </div>
-          </div>
-        </div>
-        <section id="">
-          <div class="row mt-2">
-            @include('vendedores.table')
-          </div>
-        </section>
+        @yield('content')
       </div>
     </div>
   </div>
@@ -91,11 +70,6 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
         target="_blank">Snappath.mx </span>
     </p>
   </footer>
-  <script src="{{ url('app-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
-  <script src="{{ url('app-assets/vendors/js/extensions/unslider-min.js')}}" type="text/javascript"></script>
-  <script src="{{ url('app-assets/js/core/app-menu.js')}}" type="text/javascript"></script>
-  <script src="{{ url('app-assets/js/core/app.js')}}" type="text/javascript"></script>
-  <script src="{{ url('app-assets/js/scripts/customizer.js')}}" type="text/javascript"></script>
-  <script src="{{ url('app-assets/vendors/js/forms/tags/form-field.js')}}" type="text/javascript"></script>
+  @include('layouts.data_js_app')
 </body>
 </html>
